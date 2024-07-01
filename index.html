@@ -8,5 +8,86 @@
 </head>
 <body>
 
+<div class="wrapper">
+  <header class="header">
+
+    <div class="container">
+      <a href="#!" class="header__logo">
+        <img 
+          src="./icons/logo.png" 
+          class="header__logo-image"
+          width="180" 
+          height="71" 
+          alt="logo"
+        ></img>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Услуги</a></li>
+          <li class="header__item">
+            <a href="#" class="header__link">О нас</a></li>
+          <li class="header__item">
+            <a href="#" class="header__link">Отзывы и практика</a></li>
+          <li class="header__item">
+            <a href="#" class="header__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:8-800-222-26-94" class="header__contact">
+        <img src="./icons/social/whatsapp.svg" alt="" class="header__contact-image">
+        8 800 222 26 94
+      </a>
+      <p class="header__city">
+        <img src="./icons/city.svg" alt="" class="header__city-image">
+        Москва
+      </p>
+    </div>
+  </header>
+<div class="contaiter__hero-button">
+  <div class="hero container">
+    <div class="hero__box">
+      <h1 class="hero__box-text"><span>Экспресс</span><br>консультация<br>юриста</h1>
+      <form action="#!" method="get" class="hero__form">
+          <label for="user-phone"></label>
+          <input 
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            placeholder="Телефон"
+            required
+            autocomplete="off">
+          <label for="user-text"></label>
+          <textarea
+          id="user-text"
+          name="user-text"
+          placeholder="Ваш вопрос"
+          required
+          autocomplete="off" ></textarea>
+        <button type="submit" class="hero__submit">Получить консультацию</button>
+      </form> 
+      <div class="hero__policy">Нажимая на кнопку, я соглашаюсь с условиями<br>
+        <a href="#1" class="hero__policy-link">Политики конфиденциальности</a></div>
+    </div>
+    <div class="hero__info">
+      <h1 class="hero__text">Спишем долги или выплатим их за вас</h1>
+      <ul class="hero__list">
+        <li class="hero__item">Банкротство физических лиц</li>
+        <li class="hero__item">Гарантия списания в договоре</li>
+        <li class="hero__item">Списание кредитов и иных долгов</li>
+        <li class="hero__item">Работаем по всей России</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="./images/welcome-man.png" alt="" class="hero__image-man">
+      <img src="./images/welcome-woman.png" alt="" class="hero__image-woman">
+    </div>
+  </div>
+</div>
+<button type="button" class="hero__button">
+  <span class="hero__button-up">₽</span>
+  <span class="hero__button-left">Онлайн оплата</span>
+</button>
+</div>
+
 </body>
 </html>
