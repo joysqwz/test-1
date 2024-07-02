@@ -1,93 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Бизнес-юрист</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-
-<div class="wrapper">
-  <header class="header">
-
-    <div class="container">
-      <a href="#!" class="header__logo">
-        <img 
-          src="./icons/logo.png" 
-          class="header__logo-image"
-          width="180" 
-          height="71" 
-          alt="logo"
-        ></img>
-      </a>
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__link">Услуги</a></li>
-          <li class="header__item">
-            <a href="#" class="header__link">О нас</a></li>
-          <li class="header__item">
-            <a href="#" class="header__link">Отзывы и практика</a></li>
-          <li class="header__item">
-            <a href="#" class="header__link">Контакты</a></li>
-        </ul>
-      </nav>
-      <a href="tel:8-800-222-26-94" class="header__contact">
-        <img src="./icons/social/whatsapp.svg" alt="" class="header__contact-image">
-        8 800 222 26 94
-      </a>
-      <p class="header__city">
-        <img src="./icons/city.svg" alt="" class="header__city-image">
-        Москва
-      </p>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <a href="#!" class="header__logo">
+          <img src="./icons/logo.png" class="header__logo-image" width="180" height="71" alt="logo"></img>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <div class="header__services-list">
+                <button class="header__services-list_button">Услуги</button>
+                <div class="header__services-list_content">
+                  <a href="#">Банкротство физических лиц</a>
+                  <hr>
+                  <a href="#">Банкротство юридических лиц</a>
+                  <hr>
+                  <a href="#">Защита от коллекторов</a>
+                  <hr>
+                  <a href="#">Кредитные споры</a>
+                  <hr>
+                  <a href="#">Семейные споры</a>
+                  <hr>
+                  <a href="#">Судебная защита</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Отзывы и практика</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:8-800-222-26-94" class="header__contact">
+          <img src="./icons/social/whatsapp.svg" alt="" class="header__contact-image">
+          8 800 222 26 94
+        </a>
+        <p class="header__city">
+          <img src="./icons/city.svg" alt="" class="header__city-image">
+          Москва
+        </p>
+      </div>
+    </header>
+    <div class="contaiter__hero-button">
+      <div class="hero container">
+        <div class="hero__box">
+          <h1 class="hero__box-text"><span>Экспресс</span><br>консультация<br>юриста</h1>
+          <form action="#!" method="get" class="hero__form">
+            <label for="user-phone"></label>
+            <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required autocomplete="off">
+            <label for="user-text"></label>
+            <textarea id="user-text" name="user-text" placeholder="Ваш вопрос" required autocomplete="off"></textarea>
+            <button type="submit" class="hero__submit">Получить консультацию</button>
+          </form>
+          <div class="hero__policy">Нажимая на кнопку, я соглашаюсь с условиями<br>
+            <a href="#1" class="hero__policy-link">Политики конфиденциальности</a>
+          </div>
+        </div>
+        <div class="hero__info">
+          <h1 class="hero__text">Спишем долги или выплатим их за вас</h1>
+          <ul class="hero__list">
+            <li class="hero__item">Банкротство физических лиц</li>
+            <li class="hero__item">Гарантия списания в договоре</li>
+            <li class="hero__item">Списание кредитов и иных долгов</li>
+            <li class="hero__item">Работаем по всей России</li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="./images/welcome-man.png" alt="" class="hero__image-man">
+          <img src="./images/welcome-woman.png" alt="" class="hero__image-woman">
+        </div>
+      </div>
     </div>
-  </header>
-<div class="contaiter__hero-button">
-  <div class="hero container">
-    <div class="hero__box">
-      <h1 class="hero__box-text"><span>Экспресс</span><br>консультация<br>юриста</h1>
-      <form action="#!" method="get" class="hero__form">
-          <label for="user-phone"></label>
-          <input 
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            placeholder="Телефон"
-            required
-            autocomplete="off">
-          <label for="user-text"></label>
-          <textarea
-          id="user-text"
-          name="user-text"
-          placeholder="Ваш вопрос"
-          required
-          autocomplete="off" ></textarea>
-        <button type="submit" class="hero__submit">Получить консультацию</button>
-      </form> 
-      <div class="hero__policy">Нажимая на кнопку, я соглашаюсь с условиями<br>
-        <a href="#1" class="hero__policy-link">Политики конфиденциальности</a></div>
-    </div>
-    <div class="hero__info">
-      <h1 class="hero__text">Спишем долги или выплатим их за вас</h1>
-      <ul class="hero__list">
-        <li class="hero__item">Банкротство физических лиц</li>
-        <li class="hero__item">Гарантия списания в договоре</li>
-        <li class="hero__item">Списание кредитов и иных долгов</li>
-        <li class="hero__item">Работаем по всей России</li>
-      </ul>
-    </div>
-    <div class="image">
-      <img src="./images/welcome-man.png" alt="" class="hero__image-man">
-      <img src="./images/welcome-woman.png" alt="" class="hero__image-woman">
-    </div>
+    <button type="button" class="hero__button">
+      <span class="hero__button-up">₽</span>
+      <span class="hero__button-left">Онлайн оплата</span>
+    </button>
   </div>
-</div>
-<button type="button" class="hero__button">
-  <span class="hero__button-up">₽</span>
-  <span class="hero__button-left">Онлайн оплата</span>
-</button>
-</div>
+
+  <main class="main">
+    <section class="services">
+      <div class="container">
+        <h1 class="services__title title_h1">Предоставляем услуги</h1>
+        <ul class="services__list-image">
+          <li class="services__item-image">
+            <a href="#!">
+              <img src="./images/services/1-background.png" alt="">
+              <img src="./icons/services/1.svg" alt="" class="services__item-icon one">
+              <h3 class="services__item-image-text">Банкротство<br>физических лиц</h3>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="services__item-image">
+            <img src="./images/services/2-background.png" alt="">
+            <img src="./icons/services/2.svg" alt="" class="services__item-icon two">
+            <h3 class="services__item-image-text">Банкротство<br>юридических лиц</h3>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="services__item-image">
+            <img src="./images/services/3-background.png" alt="">
+            <img src="./icons/services/3.svg" alt="" class="services__item-icon three">
+            <h3 class="services__item-image-text">Защита<br>от коллекторов</h3>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="services__item-image">
+            <img src="./images/services/6-background.png" alt="">
+            <img src="./icons/services/6.svg" alt="" class="services__item-icon four">
+            <h3 class="services__item-image-text">Кредитные<br>споры</h3>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="services__item-image">
+            <img src="./images/services/5-background.png" alt="">
+            <img src="./icons/services/5.svg" alt="" class="services__item-icon five">
+            <h3 class="services__item-image-text">Семейные<br>споры</h3>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="services__item-image">
+            <img src="./images/services/4-background.png" alt="">
+            <img src="./icons/services/4.svg" alt="" class="services__item-icon six">
+            <h3 class="services__item-image-text">Судебная<br>защита</h3>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="container">
+        <h1 class="review__title title_h1">Отзывы и практика</h1>
+        <ul class="review__list">
+          <li class="review__item">
+            <img src="./images/fb-ekaterina.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+          <li class="review__item">
+            <img src="./images/fb-olga.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+          <li class="review__item">
+            <img src="./images/fb-zoya.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+          <li class="review__item">
+            <img src="./images/fb-ekaterina.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+          <li class="review__item">
+            <img src="./images/fb-olga.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+          <li class="review__item">
+            <img src="./images/fb-zoya.jpg" alt="" class="review__author-photo">
+            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+            <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
+            <p class="review__case">Дело: A43-5102-2019</p>
+            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+          </li>
+        </ul>
+        <button type="submit" class="review__submit">Все отзывы</button>
+      </div>
+      <div class="review__video-switch">
+        <img src="./icons/arrow-left-video.svg" alt="" class="left">
+        <div class="review__video">
+          <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="401" height="219"
+            src="https://www.youtube.com/embed/oh8pmLb9GZw?si=7sgykZArFQ-1iE0L&amp;controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <img src="./icons/arrow-right-video.svg" alt="" class="right">
+      </div>
+    </section>
+    <section class="media">
+      <div class="container">
+        <h1 class="media__title title_h1">СМИ о нас</h1>
+        <div class="review__video-switch">
+          <img src="./icons/arrow-left-video.svg" alt="" class="left">
+          <div class="review__video">
+            <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="401" height="219"
+              src="https://www.youtube.com/embed/oh8pmLb9GZw?si=7sgykZArFQ-1iE0L&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <img src="./icons/arrow-right-video.svg" alt="" class="right">
+        </div>
+      </div>
+    </section>
+  </main>
+
 
 </body>
+
 </html>
