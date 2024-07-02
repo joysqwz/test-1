@@ -190,8 +190,8 @@
  /**
    Приводим к единому цвету svg-элементы
   */
- svg *[fill] { fill: currentColor }
- svg *[stroke] { stroke: currentColor }
+ /* svg *[fill] { fill: currentColor }
+ svg *[stroke] { stroke: currentColor } */
  
  /**
    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
@@ -605,12 +605,12 @@ textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s 
 
 .services .container {
   max-width: 1344px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
 }
 
 .title_h1 {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   line-height: 1.86;
 }
@@ -812,8 +812,8 @@ textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s 
 
 .review__submit:hover {
   cursor: pointer;
-  background-color: #fff;
-  color: #1277D3;
+  background-color: #1987EC;
+  color: #fff;
 }
 
 .review__video {
@@ -824,15 +824,26 @@ textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s 
   margin: 0 30px;
 }
 
-
 .review__video-switch {
-  display: flex;
-  justify-content: center;
-  max-width: 1476px;
+  position: relative;
+  max-width: 1536px;
+  padding: 0 30px;
   margin: 0 auto 61px auto;
 }
 
+.review__video-switch svg:nth-child(1),.review__video-switch svg:nth-child(2) {
+  position: absolute;
+  top: 86px;
+  transition-duration: 0.2s;
+}
 
-.media__title.title_h1 {
-  margin-bottom: 45px;
+.review__video-switch svg:nth-child(1) {
+  left: 50px;
+}
+.review__video-switch svg:nth-child(2) {
+  right: 50px;
+}
+
+.review__video-switch svg:hover {
+  cursor: pointer;
 }
