@@ -1,272 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Бизнес-юрист</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="website icon" type="png" href="./favicon.png">
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper-hero">
     <header class="header">
       <div class="container">
-
-        <a href="#!" class="header__logo">
-          <img src="./icons/logo.png" class="header__logo-image" width="180" height="71" alt="logo"></img>
+        <a href="/" class="header__logo">
+          <img src="./images/logo.svg" class="header__logo-image" width="180" height="71" alt="logo"
+            loading="lazy"></img>
         </a>
-
         <nav class="header__menu">
           <ul class="header__list">
             <li>
               <div class="header__services-list">
                 <button class="header__services-list_button">Услуги</button>
                 <div class="header__services-list_content">
-                  <a href="#">Банкротство физических лиц</a>
+                  <a href="#!">Банкротство физических лиц</a>
                   <hr>
-                  <a href="#">Банкротство юридических лиц</a>
+                  <a href="#!">Банкротство юридических лиц</a>
                   <hr>
-                  <a href="#">Защита от коллекторов</a>
+                  <a href="#!">Защита от коллекторов</a>
                   <hr>
-                  <a href="#">Кредитные споры</a>
+                  <a href="#!">Кредитные споры</a>
                   <hr>
-                  <a href="#">Семейные споры</a>
+                  <a href="#!">Семейные споры</a>
                   <hr>
-                  <a href="#">Судебная защита</a>
+                  <a href="#!">Судебная защита</a>
                 </div>
               </div>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">О нас</a>
+              <a href="#!" class="header__link">О нас</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Отзывы и практика</a>
+              <a href="#!" class="header__link">Отзывы и практика</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Контакты</a>
+              <a href="#!" class="header__link">Контакты</a>
             </li>
           </ul>
         </nav>
-
-        <a href="tel:8-800-222-26-94" class="header__contact">
-          <img src="./icons/social/whatsapp.svg" alt="" class="header__contact-image">
-          8 800 222 26 94
-        </a>
-
-        <p class="header__city">
-          <img src="./icons/city.svg" alt="" class="header__city-image">
-          Москва
-        </p>
-        
+        <a href="tel:8-800-222-26-94" class="header__contact">8 800 222 26 94</a>
+        <div class="header__city-select">
+          <select name="city" id="select-city" class="select-inner">
+            <option value="moscow">Москва</option>
+            <option value="petersburg">Санкт-Петербург</option>
+            <option value="perm">Пермь</option>
+            <option value="novosibirsk">Новосибирск</option>
+          </select>
+        </div>
       </div>
     </header>
-    <div class="contaiter__hero-button">
-      <div class="hero container">
-        <div class="hero__box">
-          <h1 class="hero__box-text"><span>Экспресс</span><br>консультация<br>юриста</h1>
-          <form action="#!" method="get" class="hero__form">
-            <label for="user-phone"></label>
-            <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required autocomplete="off">
-            <label for="user-text"></label>
-            <textarea id="user-text" name="user-text" placeholder="Ваш вопрос" required autocomplete="off"></textarea>
-            <button type="submit" class="hero__submit">Получить консультацию</button>
-          </form>
-          <div class="hero__policy">Нажимая на кнопку, я соглашаюсь с условиями<br>
-            <a href="#1" class="hero__policy-link">Политики конфиденциальности</a>
+    <main class="main">
+      <div class="contaiter__hero-button">
+        <div class="hero container">
+          <div class="hero__form">
+            <p class="hero__form-text"><span>Экспресс</span><br>консультация<br>юриста</p>
+            <form action="">
+              <label for="user-phone"></label>
+              <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required autocomplete="off">
+              <label for="user-text"></label>
+              <textarea id="user-text" name="user-text" placeholder="Ваш вопрос" required autocomplete="off"></textarea>
+              <button type="button" class="hero__submit">Получить консультацию</button>
+            </form>
+            <div class="hero__policy">Нажимая на кнопку, я соглашаюсь с условиями<br>
+              <a href="#!" class="hero__policy-link">Политики конфиденциальности</a>
+            </div>
+          </div>
+          <div class="hero__info">
+            <h1 class="hero__text">Спишем долги или выплатим их за вас</h1>
+            <ul class="hero__list">
+              <li class="hero__item">Банкротство физических лиц</li>
+              <li class="hero__item">Гарантия списания в договоре</li>
+              <li class="hero__item">Списание кредитов и иных долгов</li>
+              <li class="hero__item">Работаем по всей России</li>
+            </ul>
+          </div>
+          <div class="hero__image">
+            <img src="./images/hero-1.png" alt="" class="hero__image-one" width="505" height="592" loading="lazy">
+            <img src="./images/hero-2.png" alt="" class="hero__image-two" width="401" height="517" loading="lazy">
           </div>
         </div>
-        <div class="hero__info">
-          <h1 class="hero__text">Спишем долги или выплатим их за вас</h1>
-          <ul class="hero__list">
-            <li class="hero__item">Банкротство физических лиц</li>
-            <li class="hero__item">Гарантия списания в договоре</li>
-            <li class="hero__item">Списание кредитов и иных долгов</li>
-            <li class="hero__item">Работаем по всей России</li>
-          </ul>
+      </div>
+      <a href="#!" class="hero__widget">
+        <span class="hero__widget-up">₽</span>
+        <span class="hero__widget-down">Онлайн оплата</span>
+      </a>
+  </div>
+  <section class="services">
+    <div class="container">
+      <p class="services__title title">Предоставляем услуги</p>
+      <ul class="services__list-image">
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-1.png" alt="">
+            <img src="./images/services-1-i.svg" alt="" class="services__item-icon one">
+            <p class="services__item-image-text">Банкротство<br>физических лиц</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-2.png" alt="">
+            <img src="./images/services-2-i.svg" alt="" class="services__item-icon two">
+            <p class="services__item-image-text">Банкротство<br>юридических лиц</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-3.png" alt="">
+            <img src="./images/services-3-i.svg" alt="" class="services__item-icon three">
+            <p class="services__item-image-text">Защита<br>от коллекторов</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-6.png" alt="">
+            <img src="./images/services-6-i.svg" alt="" class="services__item-icon four">
+            <p class="services__item-image-text">Кредитные<br>споры</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-5.png" alt="">
+            <img src="./images/services-5-i.svg" alt="" class="services__item-icon five">
+            <p class="services__item-image-text">Семейные<br>споры</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="services__item-image">
+          <a href="#!">
+            <img src="./images/services-4.png" alt="">
+            <img src="./images/services-4-i.svg" alt="" class="services__item-icon six">
+            <p class="services__item-image-text">Судебная<br>защита</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="review">
+    <div class="container">
+      <p class="review__title title">Отзывы и практика</p>
+      <ul class="review__list">
+        <li class="review__item">
+          <img src="./images/fb-1.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+        <li class="review__item">
+          <img src="./images/fb-2.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+        <li class="review__item">
+          <img src="./images/fb-3.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+        <li class="review__item">
+          <img src="./images/fb-1.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+        <li class="review__item">
+          <img src="./images/fb-2.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+        <li class="review__item">
+          <img src="./images/fb-3.jpg" alt="" class="review__author-photo">
+          <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
+          <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
+          <p class="review__case">Дело: A43-5102-2019</p>
+          <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
+            потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
+            решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
+            но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
+          <a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
+        </li>
+      </ul>
+      <a href="#!" class="review__submit">Все отзывы</a>
+    </div>
+    <div class="video-switch">
+      <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.142271 15.5656C0.156223 15.8005 0.248667 16.0239 0.404772 16.2L13.0048 30.2C13.0952 30.3078 13.2064 30.3964 13.3318 30.4604C13.4571 30.5244 13.594 30.5625 13.7344 30.5725C13.8748 30.5826 14.0158 30.5643 14.1489 30.5188C14.2821 30.4732 14.4047 30.4014 14.5096 30.3075C14.6145 30.2137 14.6994 30.0997 14.7594 29.9724C14.8193 29.845 14.853 29.707 14.8585 29.5663C14.8641 29.4257 14.8413 29.2854 14.7915 29.1538C14.7417 29.0221 14.666 28.9018 14.5689 28.8L2.60323 15.5L14.5689 2.2C14.666 2.0982 14.7417 1.97791 14.7915 1.84626C14.8413 1.71462 14.8641 1.57432 14.8586 1.43369C14.853 1.29306 14.8193 1.15498 14.7594 1.02765C14.6994 0.900315 14.6145 0.78633 14.5096 0.692467C14.4047 0.598604 14.2821 0.526778 14.1489 0.481256C14.0158 0.435733 13.8748 0.417444 13.7344 0.427476C13.594 0.437507 13.4571 0.475653 13.3318 0.539648C13.2064 0.603644 13.0952 0.692182 13.0048 0.800002L0.404772 14.8C0.312545 14.9039 0.241868 15.0251 0.196809 15.1565C0.15175 15.2879 0.133202 15.427 0.142271 15.5656Z"
+          fill="#1987EC" />
+      </svg>
+      <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.8577 15.4344C14.8438 15.1995 14.7513 14.9761 14.5952 14.8L1.99523 0.79998C1.90478 0.692161 1.79358 0.603624 1.66824 0.539631C1.54289 0.475635 1.40596 0.437487 1.26558 0.427456C1.1252 0.417425 0.984237 0.435715 0.851067 0.481235C0.717896 0.526758 0.59525 0.598585 0.490386 0.692448C0.385522 0.78631 0.300582 0.900295 0.240639 1.02763C0.180697 1.15496 0.146978 1.29305 0.141454 1.43367C0.13593 1.5743 0.15872 1.7146 0.208489 1.84624C0.258258 1.97789 0.333971 2.09818 0.431148 2.19998L12.3968 15.5L0.431149 28.8C0.333972 28.9018 0.25826 29.0221 0.20849 29.1537C0.158721 29.2854 0.13591 29.4257 0.141434 29.5663C0.146958 29.7069 0.180698 29.845 0.240641 29.9724C0.300583 30.0997 0.385523 30.2137 0.490387 30.3075C0.595251 30.4014 0.717898 30.4732 0.851068 30.5187C0.984239 30.5643 1.1252 30.5826 1.26558 30.5725C1.40596 30.5625 1.5429 30.5243 1.66824 30.4604C1.79359 30.3964 1.90478 30.3078 1.99523 30.2L14.5952 16.2C14.6875 16.0961 14.7581 15.9749 14.8032 15.8435C14.8483 15.7121 14.8668 15.573 14.8577 15.4344Z"
+          fill="#1987EC" />
+      </svg>
+      <div class="video">
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="media">
+    <p class="media__title title">СМИ о нас</p>
+    <div class="video-switch">
+      <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.142271 15.5656C0.156223 15.8005 0.248667 16.0239 0.404772 16.2L13.0048 30.2C13.0952 30.3078 13.2064 30.3964 13.3318 30.4604C13.4571 30.5244 13.594 30.5625 13.7344 30.5725C13.8748 30.5826 14.0158 30.5643 14.1489 30.5188C14.2821 30.4732 14.4047 30.4014 14.5096 30.3075C14.6145 30.2137 14.6994 30.0997 14.7594 29.9724C14.8193 29.845 14.853 29.707 14.8585 29.5663C14.8641 29.4257 14.8413 29.2854 14.7915 29.1538C14.7417 29.0221 14.666 28.9018 14.5689 28.8L2.60323 15.5L14.5689 2.2C14.666 2.0982 14.7417 1.97791 14.7915 1.84626C14.8413 1.71462 14.8641 1.57432 14.8586 1.43369C14.853 1.29306 14.8193 1.15498 14.7594 1.02765C14.6994 0.900315 14.6145 0.78633 14.5096 0.692467C14.4047 0.598604 14.2821 0.526778 14.1489 0.481256C14.0158 0.435733 13.8748 0.417444 13.7344 0.427476C13.594 0.437507 13.4571 0.475653 13.3318 0.539648C13.2064 0.603644 13.0952 0.692182 13.0048 0.800002L0.404772 14.8C0.312545 14.9039 0.241868 15.0251 0.196809 15.1565C0.15175 15.2879 0.133202 15.427 0.142271 15.5656Z"
+          fill="#1987EC" />
+      </svg>
+      <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.8577 15.4344C14.8438 15.1995 14.7513 14.9761 14.5952 14.8L1.99523 0.79998C1.90478 0.692161 1.79358 0.603624 1.66824 0.539631C1.54289 0.475635 1.40596 0.437487 1.26558 0.427456C1.1252 0.417425 0.984237 0.435715 0.851067 0.481235C0.717896 0.526758 0.59525 0.598585 0.490386 0.692448C0.385522 0.78631 0.300582 0.900295 0.240639 1.02763C0.180697 1.15496 0.146978 1.29305 0.141454 1.43367C0.13593 1.5743 0.15872 1.7146 0.208489 1.84624C0.258258 1.97789 0.333971 2.09818 0.431148 2.19998L12.3968 15.5L0.431149 28.8C0.333972 28.9018 0.25826 29.0221 0.20849 29.1537C0.158721 29.2854 0.13591 29.4257 0.141434 29.5663C0.146958 29.7069 0.180698 29.845 0.240641 29.9724C0.300583 30.0997 0.385523 30.2137 0.490387 30.3075C0.595251 30.4014 0.717898 30.4732 0.851068 30.5187C0.984239 30.5643 1.1252 30.5826 1.26558 30.5725C1.40596 30.5625 1.5429 30.5243 1.66824 30.4604C1.79359 30.3964 1.90478 30.3078 1.99523 30.2L14.5952 16.2C14.6875 16.0961 14.7581 15.9749 14.8032 15.8435C14.8483 15.7121 14.8668 15.573 14.8577 15.4344Z"
+          fill="#1987EC" />
+      </svg>
+      <div class="video">
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I=Opaque" title="YouTube video player"
+          allowfullscreen></iframe>
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I=Opaque" title="YouTube video player"
+          allowfullscreen></iframe>
+        <iframe width="401" height="219" loading="lazy"
+          src="https://www.youtube.com/embed/bDYEnNzprzE?si=FjTjXa9p6SPtG-3I=Opaque" title="YouTube video player"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="application">
+    <div class="application-wrapper">
+      <div class="container">
+        <div class="application__image">
+          <img src="./images/application-1.png" alt="" width="325" height="454" loading="lazy">
         </div>
-        <div class="image">
-          <img src="./images/welcome-man.png" alt="" class="hero__image-man" loading="lazy">
-          <img src="./images/welcome-woman.png" alt="" class="hero__image-woman" loading="lazy">
+        <div class="application__text">
+          <p class="application__title">
+            Оставьте заявку на бесплатную консультацию ведущего юриста
+          </p>
+          <p class="application__policy">
+            Нажимая на кнопку, я соглашаюсь с условиями<br>
+            <a href="#!" class="application__policy-link">Политики конфиденциальности</a>
+          </p>
+        </div>
+        <div class="application__form">
+          <form action="">
+            <label for="user-phone"></label>
+            <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required autocomplete="off">
+            <label for="user-name"></label>
+            <input type="text" name="user-name" id="user-name" placeholder="Имя" required autocomplete="off">
+            <button type="button" class="application__submit">Отправить заявку</button>
+          </form>
         </div>
       </div>
     </div>
-    <button type="button" class="hero__button">
-      <span class="hero__button-up">₽</span>
-      <span class="hero__button-left">Онлайн оплата</span>
-    </button>
-  </div>
-
-  <main class="main">
-    <section class="services">
+  </section>
+  <section class="examples">
+    <div class="container">
+      <p class="examples__title title">Примеры завершенных дел наших Клиентов</p>
+      <ul class="examples__list">
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+        <li class="examples__item">
+          <span>Списан долг</span>
+          <span>567 790 ₽</span>
+          <span>Клиент</span>
+          <span>Мурашко Андрей Владимирович 1987 г.р.</span>
+          <a href="#!">СМОТРЕТЬ РЕШЕНИЕ</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="mission">
       <div class="container">
-        <h1 class="services__title title_h1">Предоставляем услуги</h1>
-        <ul class="services__list-image">
-          <li class="services__item-image">
-            <a href="#!">
-              <img src="./images/services/1-background.png" alt="">
-              <img src="./icons/services/1.svg" alt="" class="services__item-icon one">
-              <h3 class="services__item-image-text">Банкротство<br>физических лиц</h3>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </li>
-          <li class="services__item-image">
-            <img src="./images/services/2-background.png" alt="">
-            <img src="./icons/services/2.svg" alt="" class="services__item-icon two">
-            <h3 class="services__item-image-text">Банкротство<br>юридических лиц</h3>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                fill="white" />
-            </svg>
-          </li>
-          <li class="services__item-image">
-            <img src="./images/services/3-background.png" alt="">
-            <img src="./icons/services/3.svg" alt="" class="services__item-icon three">
-            <h3 class="services__item-image-text">Защита<br>от коллекторов</h3>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                fill="white" />
-            </svg>
-          </li>
-          <li class="services__item-image">
-            <img src="./images/services/6-background.png" alt="">
-            <img src="./icons/services/6.svg" alt="" class="services__item-icon four">
-            <h3 class="services__item-image-text">Кредитные<br>споры</h3>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                fill="white" />
-            </svg>
-          </li>
-          <li class="services__item-image">
-            <img src="./images/services/5-background.png" alt="">
-            <img src="./icons/services/5.svg" alt="" class="services__item-icon five">
-            <h3 class="services__item-image-text">Семейные<br>споры</h3>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                fill="white" />
-            </svg>
-          </li>
-          <li class="services__item-image">
-            <img src="./images/services/4-background.png" alt="">
-            <img src="./icons/services/4.svg" alt="" class="services__item-icon six">
-            <h3 class="services__item-image-text">Судебная<br>защита</h3>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.71392 4.00001C6.78822 3.92563 6.87645 3.86662 6.97357 3.82636C7.07069 3.7861 7.17479 3.76538 7.27993 3.76538C7.38506 3.76538 7.48916 3.7861 7.58628 3.82636C7.6834 3.86662 7.77163 3.92563 7.84592 4.00001L13.2839 9.43401C13.3583 9.50831 13.4173 9.59654 13.4576 9.69366C13.4978 9.79078 13.5186 9.89488 13.5186 10C13.5186 10.1051 13.4978 10.2092 13.4576 10.3064C13.4173 10.4035 13.3583 10.4917 13.2839 10.566L7.84592 16C7.77231 16.0774 7.68395 16.1392 7.58606 16.1818C7.48818 16.2245 7.38274 16.2471 7.27597 16.2484C7.16919 16.2497 7.06325 16.2296 6.96437 16.1893C6.86549 16.1489 6.77569 16.0892 6.70025 16.0137C6.62481 15.9381 6.56527 15.8482 6.52513 15.7492C6.48498 15.6503 6.46505 15.5443 6.46651 15.4375C6.46797 15.3308 6.49079 15.2254 6.53363 15.1276C6.57646 15.0297 6.63845 14.9415 6.71593 14.868L11.5879 10L6.71593 5.13201C6.64141 5.05784 6.58225 4.96972 6.54182 4.87267C6.50139 4.77562 6.48048 4.67156 6.48029 4.56642C6.48011 4.46129 6.50065 4.35715 6.54074 4.25996C6.58082 4.16278 6.63968 4.07444 6.71392 4.00001Z"
-                fill="white" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="review">
-      <div class="container">
-        <h1 class="review__title title_h1">Отзывы и практика</h1>
-        <ul class="review__list">
-          <li class="review__item">
-            <img src="./images/fb-ekaterina.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-          <li class="review__item">
-            <img src="./images/fb-olga.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-          <li class="review__item">
-            <img src="./images/fb-zoya.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-          <li class="review__item">
-            <img src="./images/fb-ekaterina.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Никитина<br>Екатерина Владимировна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-          <li class="review__item">
-            <img src="./images/fb-olga.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Кирюшкина<br>Ольга Викторовна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-          <li class="review__item">
-            <img src="./images/fb-zoya.jpg" alt="" class="review__author-photo">
-            <time datetime="2020-02-18" class="review__data-review">18.02.2020</time>
-            <p class="review__author-name">Ширма<br>Зоя Аршавировна</p>
-            <p class="review__case">Дело: A43-5102-2019</p>
-            <p class="review__author-text">Я благодарна вам за помощь в моей непростой ситуации, признаюсь, что боялась
-              потерять все, что было в собственности у моего мужа из-за своих долгов. Ваша честность в разъяснении
-              решений моей проблемы и подкупила, стопроцентных гарантий никто не давал,
-              но были шансы... <a href="#!" class="review__author-text-link">Читать дальше</a></p>
-            <img src="./icons/file.svg" alt=""><a href="#!" class="review__case-link">ПОСМОТРЕТЬ СУДЕБНОЕ РЕШЕНИЕ</a>
-          </li>
-        </ul>
-        <button type="submit" class="review__submit">Все отзывы</button>
-      </div>
-
-      <div class="review__video-switch">
-        <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0.142271 15.5656C0.156223 15.8005 0.248667 16.0239 0.404772 16.2L13.0048 30.2C13.0952 30.3078 13.2064 30.3964 13.3318 30.4604C13.4571 30.5244 13.594 30.5625 13.7344 30.5725C13.8748 30.5826 14.0158 30.5643 14.1489 30.5188C14.2821 30.4732 14.4047 30.4014 14.5096 30.3075C14.6145 30.2137 14.6994 30.0997 14.7594 29.9724C14.8193 29.845 14.853 29.707 14.8585 29.5663C14.8641 29.4257 14.8413 29.2854 14.7915 29.1538C14.7417 29.0221 14.666 28.9018 14.5689 28.8L2.60323 15.5L14.5689 2.2C14.666 2.0982 14.7417 1.97791 14.7915 1.84626C14.8413 1.71462 14.8641 1.57432 14.8586 1.43369C14.853 1.29306 14.8193 1.15498 14.7594 1.02765C14.6994 0.900315 14.6145 0.78633 14.5096 0.692467C14.4047 0.598604 14.2821 0.526778 14.1489 0.481256C14.0158 0.435733 13.8748 0.417444 13.7344 0.427476C13.594 0.437507 13.4571 0.475653 13.3318 0.539648C13.2064 0.603644 13.0952 0.692182 13.0048 0.800002L0.404772 14.8C0.312545 14.9039 0.241868 15.0251 0.196809 15.1565C0.15175 15.2879 0.133202 15.427 0.142271 15.5656Z" fill="#1987EC" />
-        </svg>
-        <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.8577 15.4344C14.8438 15.1995 14.7513 14.9761 14.5952 14.8L1.99523 0.79998C1.90478 0.692161 1.79358 0.603624 1.66824 0.539631C1.54289 0.475635 1.40596 0.437487 1.26558 0.427456C1.1252 0.417425 0.984237 0.435715 0.851067 0.481235C0.717896 0.526758 0.59525 0.598585 0.490386 0.692448C0.385522 0.78631 0.300582 0.900295 0.240639 1.02763C0.180697 1.15496 0.146978 1.29305 0.141454 1.43367C0.13593 1.5743 0.15872 1.7146 0.208489 1.84624C0.258258 1.97789 0.333971 2.09818 0.431148 2.19998L12.3968 15.5L0.431149 28.8C0.333972 28.9018 0.25826 29.0221 0.20849 29.1537C0.158721 29.2854 0.13591 29.4257 0.141434 29.5663C0.146958 29.7069 0.180698 29.845 0.240641 29.9724C0.300583 30.0997 0.385523 30.2137 0.490387 30.3075C0.595251 30.4014 0.717898 30.4732 0.851068 30.5187C0.984239 30.5643 1.1252 30.5826 1.26558 30.5725C1.40596 30.5625 1.5429 30.5243 1.66824 30.4604C1.79359 30.3964 1.90478 30.3078 1.99523 30.2L14.5952 16.2C14.6875 16.0961 14.7581 15.9749 14.8032 15.8435C14.8483 15.7121 14.8668 15.573 14.8577 15.4344Z" fill="#1987EC" />
-        </svg>
-        <div class="review__video">
-          <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="401" height="219"
-            src="https://www.youtube.com/embed/oh8pmLb9GZw?si=7sgykZArFQ-1iE0L&amp;controls=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="401" height="219" src="https://www.youtube.com/embed/WkanWhuOg1E?si=My5jnlwdXtq8xwGj"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="mission__title">
+          Миссия Компании:<br>качественные и честные услуги с заботой о Клиенте!
+        </p>
+        <div class="mission__list">
+          <span>успешных банкротств</span>
+          <span>лет успешной службы</span>
+          <span>филиалов<br>по всей России</span>
+          <span>опытных юристов в штате</span>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
   </main>
 </body>
+
 </html>
