@@ -1,19 +1,9 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Montserrat';
-  color: #fff;
-  background-color: #fff;
-}
+  color: #ffffff;
+  background-color: #ffffff;
 
-h1,
-h2,
-h3 {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  color: #000;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -21,22 +11,12 @@ h1 {
   line-height: 1.86;
 }
 
-h2 {
-  font-size: 34px;
-  line-height: 2.51;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 1.08;
-}
-
 a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .wrapper-hero {
   background-image: url("../images/hero-bg.jpg");
@@ -46,7 +26,7 @@ a {
   margin-bottom: 78px;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .container {
   max-width: 1340px;
@@ -75,7 +55,6 @@ a {
   font-size: 16px;
   margin-top: 5px;
   gap: 36px;
-
 }
 
 .header__contact {
@@ -222,7 +201,7 @@ a {
   background: url('../images/city.svg') center/contain no-repeat;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .hero__info {
   width: 400px;
@@ -442,7 +421,7 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .services .container {
   max-width: 1344px;
@@ -543,7 +522,7 @@ textarea:focus::-webkit-input-placeholder {
   left: 46px;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .review.container {
   margin-top: 61px;
@@ -694,10 +673,30 @@ textarea:focus::-webkit-input-placeholder {
   transition-duration: 0.6s;
 }
 
-.review__submit:hover {
-  cursor: pointer;
-  background-color: #1987EC;
-  color: #fff;
+@media (hover: hover) {
+  .review__submit:hover {
+    cursor: pointer;
+    background-color: #1987EC;
+    color: #fff;
+  }
+}
+
+.video-switch__button-left, .video-switch__button-right {
+  position: absolute;
+  float:left;
+  top: 90px;
+  width: 50px;
+  height: 55px;
+  border: none;
+  background: none;
+}
+
+.video-switch__button-left {
+  left: 50px;
+}
+
+.video-switch__button-right {
+  right: 50px;
 }
 
 .video-switch {
@@ -711,31 +710,28 @@ textarea:focus::-webkit-input-placeholder {
 
 .video-switch svg:nth-child(1),
 .video-switch svg:nth-child(2) {
-  position: absolute;
-  top: 86px;
-  transition-duration: 0.2s;
-}
-
-.video-switch svg:nth-child(1) {
-  left: 50px;
-}
-
-.video-switch svg:nth-child(2) {
-  right: 50px;
+  position: relative;
+  top: 2px;
 }
 
 @media (hover: hover) {
-  .video-switch svg *:hover {
+  .video-switch__button-left:hover > svg * {
+    fill: #000000;
+  }
+}
+
+@media (hover: hover) {
+  .video-switch__button-left:hover, .video-switch__button-right:hover {
     cursor: pointer;
-    fill: black;
   }
 }
 
 @media (hover: hover) {
-  .video-switch iframe:hover {
-    box-shadow: 0 0 10px 0 #1987EC;
+  .video-switch__button-right:hover > svg * {
+    fill: #000000;
   }
 }
+
 
 .video-wrapper {
   display: flex;
@@ -753,6 +749,8 @@ textarea:focus::-webkit-input-placeholder {
   width: 401px;
   height: 219px;
   background-color: #000000;
+
+  box-shadow: 0 0 4px 0px #000000;
 }
 
 .video__link {
@@ -774,8 +772,8 @@ textarea:focus::-webkit-input-placeholder {
 
 .video__button {
   position: absolute;
-  top: 0;
-  left: 30%;
+  top: 35%;
+  left: 40%;
   z-index: 1;
   display: none;
   padding: 0;
@@ -813,7 +811,7 @@ textarea:focus::-webkit-input-placeholder {
   display: block;
 }
 
-/*  -----------------------------------------*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .media__title {
   margin-bottom: 45px;
@@ -823,7 +821,7 @@ textarea:focus::-webkit-input-placeholder {
   margin-bottom: 108px;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .application-wrapper {
   background-image: url('../images/application-bg.jpg');
@@ -941,7 +939,7 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .examples__title {
   margin-bottom: 36px;
@@ -1036,15 +1034,17 @@ textarea:focus::-webkit-input-placeholder {
   height: 15%;
 }
 
-.examples__item a:hover {
-  text-decoration: underline;
+@media (hover: hover) {
+  .examples__item a:hover {
+    text-decoration: underline;
+  }
 }
 
 .examples {
   padding-bottom: 88px;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .mission .container {
   display: flex;
@@ -1129,7 +1129,7 @@ textarea:focus::-webkit-input-placeholder {
   content: '500';
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .offices__title {
   margin-bottom: 28px;
@@ -1140,7 +1140,7 @@ textarea:focus::-webkit-input-placeholder {
   margin: 0 auto;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .debt-wrapper {
   background-image: url('../images/ab-de-bg.jpg');
@@ -1155,10 +1155,8 @@ textarea:focus::-webkit-input-placeholder {
   padding-bottom: 120px;
   height: 513px;
   display: flex;
-  /* row-gap: 10px; */
   align-items: center;
   flex-direction: column;
-
 }
 
 .debt__title {
@@ -1262,6 +1260,12 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 @media (hover: hover) {
+  .debt__link-item:hover ~ svg * {
+    fill: #ffffff;
+  }
+}
+
+@media (hover: hover) {
   .debt__link-item:hover {
     background-color: #53B0FF;
   }
@@ -1269,16 +1273,6 @@ textarea:focus::-webkit-input-placeholder {
 
 .debt__link-item:nth-child(1) {
   padding-left: 20px;
-}
-
-@media (hover: hover) {
-  .debt__link-item-wrapper svg *:hover {
-    fill: #ffffff;
-  }
-}
-
-.debt__link-item-wrapper svg * {
-  padding: -20px;
 }
 
 .debt__link-item:nth-child(2)::before {
@@ -1289,7 +1283,7 @@ textarea:focus::-webkit-input-placeholder {
   background: url('../images/instagram-white.svg') center/contain no-repeat;
 }
 
-/*  */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
 .footer-menu {
   display: flex;
@@ -1382,8 +1376,10 @@ textarea:focus::-webkit-input-placeholder {
   transition-duration: 0.6s;
 }
 
-.footer-menu__button:hover {
-  background-color: #000000;
+@media (hover: hover) {
+  .footer-menu__button:hover {
+    background-color: #000000;
+  }
 }
 
 .footer-menu__phone {
@@ -1423,6 +1419,8 @@ textarea:focus::-webkit-input-placeholder {
   color: #6f6f6f;
 }
 
-.footer__copyright .container a:hover {
-  text-decoration: underline;
+@media (hover: hover) {
+  .footer__copyright .container a:hover {
+    text-decoration: underline;
+  }
 }
