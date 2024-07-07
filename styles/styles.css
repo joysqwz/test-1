@@ -1308,19 +1308,20 @@ textarea:focus::-webkit-input-placeholder {
   align-items: center;
 
   height: 30px;
-  column-gap: 17px;
+  column-gap: 10px;
 }
 
 .footer-menu__social svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }
 
 @media (hover: hover) {
-  .footer-menu__social svg path:hover {
+  .footer-menu__social a:hover > svg * {
     fill: #000000;
   }
 }
