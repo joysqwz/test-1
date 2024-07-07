@@ -1259,6 +1259,14 @@ textarea:focus::-webkit-input-placeholder {
   transition-duration: 0.4s;
 }
 
+.debt__link-item::before {
+  content: '';
+  z-index: 100;
+  width: 40px;
+  /* background-color: red; */
+  aspect-ratio: 1;
+}
+
 @media (hover: hover) {
   .debt__link-item:hover ~ svg * {
     fill: #ffffff;
@@ -1272,7 +1280,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .debt__link-item:nth-child(1) {
-  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .debt__link-item:nth-child(2)::before {
