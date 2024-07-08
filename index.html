@@ -26,7 +26,7 @@
     <header class="header">
       <div class="container">
         <button class="button__burger-menu burger-button visible-mobile" type="button"
-          onclick="tabletOverlay.showModal()">
+          onclick="mobileOverlay.showModal()">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
         <a href="/" class="header__logo">
@@ -113,7 +113,7 @@
         <span class="hero__widget-down">Онлайн оплата</span>
       </a>
   </div>
-  <section class="services">
+  <div class="services">
     <div class="mobile-form-hero hidden">
       <div class="container">
         <div class="mobile__form">
@@ -209,8 +209,8 @@
         </li>
       </ul>
     </div>
-  </section>
-  <section class="review">
+  </div>
+  <div class="review">
     <div class="container">
       <p class="review__title title">Отзывы и практика</p>
       <ul class="review__list">
@@ -351,8 +351,8 @@
           </button>
         </div>
       </div>
-  </section>
-  <section class="media">
+    </div>
+  <div class="media">
     <p class="media__title title">СМИ о нас</p>
     <div class="video-switch">
       <button type="button" class="video-switch__button-left">
@@ -422,8 +422,8 @@
           </button>
         </div>
       </div>
-  </section>
-  <section class="application">
+    </div>
+  <div class="application">
     <div class="application-wrapper">
       <div class="container">
         <div class="application__image">
@@ -452,8 +452,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="examples">
+  </div>
+  <div class="examples">
     <div class="container">
       <p class="examples__title title">Примеры завершенных дел наших Клиентов</p>
       <ul class="examples__list">
@@ -501,8 +501,8 @@
         </li>
       </ul>
     </div>
-  </section>
-  <section class="mission">
+  </div>
+  <div class="mission">
     <div class="container">
       <p class="mission__title">
         Миссия Компании:<br>качественные и честные услуги с заботой о Клиенте!
@@ -514,8 +514,8 @@
         <span>опытных юристов в штате</span>
       </div>
     </div>
-  </section>
-  <section class="offices">
+  </div>
+  <div class="offices">
     <div class="container">
       <p class="offices__title title">Наши офисы в Москве</p>
     </div>
@@ -524,8 +524,8 @@
         src="https://yandex.ru/map-widget/v1/?ll=37.661988%2C55.746180&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwNzM2ORJK0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCi0LXRgtC10YDQuNC90YHQutC40Lkg0L_QtdGA0LXRg9C70L7QuiwgMTTRgTEiCg1cnBZCFdn6XkI%2C&tab=inside&z=15"
         width="1920" height="632" frameborder="1" allowfullscreen="true"></iframe>
     </div>
-  </section>
-  <section class="debt">
+  </div>
+  <div class="debt">
     <div class="debt-wrapper">
       <div class="container">
         <p class="debt__title">Узнайте как списать долги прямо сейчас!</p>
@@ -557,7 +557,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -641,46 +641,46 @@
     </div>
     </div>
   </footer>
-  <dialog class="tablet-overlay visible-tablet" id="tabletOverlay">
-    <form class="tablet-overlay__close-button-wrapper" method="dialog">
-      <button class="tablet-overlay__close-button cross-button" type="submit">
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
         <span class="visually-hidden">
           Закрыть меню навигации
         </span>
       </button>
     </form>
-    <div class="tablet-overlay__body">
-      <div class="tablet__city-select">
-        <select name="city" id="tablet-select-city" class="select-inner select-inner--overlay">
+    <div class="mobile-overlay__body">
+      <div class="mobile__city-select">
+        <select name="city" id="mobile-select-city" class="select-inner select-inner--overlay">
           <option value="moscow">Москва</option>
           <option value="petersburg">Санкт-Петербург</option>
           <option value="perm">Пермь</option>
           <option value="novosibirsk">Новосибирск</option>
         </select>
       </div>
-      <ul class="tablet-overlay__list">
-        <li class="tablet-overlay__item">
-          <a href="#" class="tablet-overlay__link">Услуги</a>
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Услуги</a>
         </li>
-        <li class="tablet-overlay__item">
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Банкротство физических лиц </a>
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Банкротство юридических лиц</a>
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Защита от коллекторов</a>
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Кредитные споры</a>
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Семейные споры</a>
-          <a href="#" class="tablet-overlay__link tablet-overlay__link--subi">Судебная защита</a>
-        </li>
-        <hr>
-        <li class="tablet-overlay__item">
-          <a href="#" class="tablet-overlay__link">О нас</a>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Банкротство физических лиц </a>
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Банкротство юридических лиц</a>
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Защита от коллекторов</a>
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Кредитные споры</a>
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Семейные споры</a>
+          <a href="#" class="mobile-overlay__link mobile-overlay__link--subi">Судебная защита</a>
         </li>
         <hr>
-        <li class="tablet-overlay__item">
-          <a href="#" class="tablet-overlay__link">Отзывы и практика</a>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">О нас</a>
         </li>
         <hr>
-        <li class="tablet-overlay__item">
-          <a href="#" class="tablet-overlay__link">Контакты</a>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Отзывы и практика</a>
+        </li>
+        <hr>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+78002222694" class="overlay__contact phone-number phone-number--overlay">8 800 222 26 94</a>
